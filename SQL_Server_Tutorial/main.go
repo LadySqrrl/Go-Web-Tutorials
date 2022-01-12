@@ -19,8 +19,7 @@ func main() {
 	}
 
 	{ // Drop users table if it already exists
-		query := `
-            DROP TABLE users;`
+		query := `DROP TABLE users;`
 
 		if _, err := db.Exec(query); err != nil {
 			log.Fatal(err)
